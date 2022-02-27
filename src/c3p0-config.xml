@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<c3p0-config>
+	<named-config name="testc3p0">
+	<!-- 指定连接数据源的基本属性 -->
+	<property name="user">root</property>
+	<property name="password">123456</property>
+	<property name="driverClass">com.mysql.jdbc.Driver</property>
+	<property name="jdbcUrl">jdbc:mysql://localhost:3306
+	/online course selection system?serverTimezone=CTT
+	&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;
+	allowMultiQueries=true</property>
+	
+	<!-- 若数据库中连接数不足时，一次向数据库服务器申请多少个连接 -->
+	<property name="acquireIncrement">5</property>
+	<property name="initialPoolSize">5</property>
+	<property name="minPoolSize">5</property>
+	<property name="maxPoolSize">10</property>
+	</named-config>
+	
+</c3p0-config>
